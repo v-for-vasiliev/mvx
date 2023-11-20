@@ -3,7 +3,7 @@ package ru.vasiliev.mvx.mvpbase
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 
-abstract class BaseActivity<V : MVPView, P : MVPPresenter<V>> : AppCompatActivity(), MVPView {
+abstract class BaseActivity<V : MVPView, P : MVPPresenter<V>> : MVPView, AppCompatActivity() {
 
     protected abstract var presenter: P
 

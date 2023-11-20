@@ -6,7 +6,7 @@ import android.widget.TextView
 import ru.vasiliev.mvx.mvpbase.BaseActivity
 import ru.vasiliev.mvx.mvpbase.BasePresenter
 
-class MainActivity : BaseActivity<MainPresenter>(), Contract.MainView {
+class MainActivity : BaseActivity<Contract.MainView, MainPresenter>(), Contract.MainView {
 
     override var presenter = MainPresenter()
 
